@@ -18,4 +18,5 @@ def ajouteSymbole(grille,joueur):
         j = int(input("Sur quelle colonne voulez-vouz jouer ?"))
         if (grille[3*i+j]!= " "
             choixIncorrect = False
-    return grille 
+    return grille
+
