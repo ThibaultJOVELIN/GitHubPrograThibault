@@ -1,7 +1,7 @@
-def initooaliseGrille(grille):
+def initialiseGrille(grille):
     compteur = 0
     for compteur in range (0,9):
-        grille[compteur] = " "
+        grille[compteur] = "_"
     return grille
 
 def afficheGrille(grille):
@@ -20,3 +20,7 @@ def ajouteSymbole(grille,joueur):
             choixIncorrect = False
     return grille
 
+
+Tableau["1","2","3","4","5","6","7","8"]
+initialiseGrille(Tableau)
+print(Tableau)
