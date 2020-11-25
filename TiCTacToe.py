@@ -16,19 +16,51 @@ def ajouteSymbole(grille,joueur):
     while choixIncorrect :
         i = int(input("Sur quelle ligne voulez vous jouer ?"))
         j = int(input("Sur quelle colonne voulez-vouz jouer ?"))
-        if (grille[3*i+j]!= " "
+        if (grille[3*i+j]!= "_":
+            grille[3*i+j] = joueur
             choixIncorrect = False
     return grille
 
-def testeVictoireVerticale (grille,joueur)
+def testeVictoireVerticale(grille):
     compteur = 0
-    while compteur > 3:
-        if (grille[compteur] != "_"
+    while compteur < 3:
+        if (grille[compteur] != "_":
             and grille[compteur] = grille[compteur + 3]
-            and grille[compteur] = grille [compteur + 6]
+            and grille[compteur] = grille [compteur + 6])
+            return True
+    return False
 
+def testeVictoireHorizontale(grille):
+    compteur = 0
+    while compteur < 3:
+        if (grille[compteur] != "_":
+            and grille[compteur*3] = grille[compteur*3+1]
+            and grille[compteur*3] = grille[compteur*3+2])
+            return True
+    return False
 
-Tableau 1","2","3","4","5","6","7","8"]
+def testeVictoireDiagonale(grille):
+    if (grille[compteur]!= "_":
+        and grille[4] = grille[0]
+        and grille[4] = grille[8]
+        return True
+    return False
+   
+def testeJeuNul(gagnantTrouve,tour):
+    if tour = 9 and gagantTrouve = False:
+        return True
+    return False
+
+    
+
+Tableau ["_","_","_","_","_","_","_","_"]
 initialiseGrille(Tableau)
 print(Tableau)
-rvbuffdgfdfdgdvv
+afficheGrille(Tableau)
+print(Tableau)
+ajouteSymbole(Tableau)
+print(Tableau)
+testeVictoireVerticale(Tableau)
+testeVictoireHorizontale(Tableau)
+testeVictoireDiagonale(Tableau)
+testeJeuNul(Tableau)
