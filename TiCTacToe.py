@@ -20,7 +20,15 @@ def ajouteSymbole(grille,joueur):
             choixIncorrect = False
     return grille
 
+def testeVictoireVerticale (grille,joueur)
+    compteur = 0
+    while compteur > 3:
+        if (grille[compteur] != "_"
+            and grille[compteur] = grille[compteur + 3]
+            and grille[compteur] = grille [compteur + 6]
 
-Tableau["1","2","3","4","5","6","7","8"]
+
+Tableau 1","2","3","4","5","6","7","8"]
 initialiseGrille(Tableau)
 print(Tableau)
+rvbuffdgfdfdgdvv
